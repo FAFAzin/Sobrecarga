@@ -6,25 +6,24 @@ package com.dio.bootcamp.pratica;
 
 public class Quadrilatero {
 
-    public static void area(double lado) {
+    public static double area(double lado) {
 
         double result = lado * lado;
+        return result; // adicionado o retorno
 
-        System.out.println("A área do Quadrado é igual a " + result);
     }
 
-    public static void area(double lado1, double lado2) {
+    public static double area(double lado1, double lado2) {
         double result = lado1 * lado2;
-
-        System.out.println("A área do Retangulo é " + result);
+        return result;
     }
 
-    public static void area(double baseMaior, double baseMenor, double altura) {
+    public static double area(double baseMaior, double baseMenor, double altura) {
 
         double baseMedia = (baseMaior + baseMenor) / 2;
-        //double baseMedia = somaDasBases / 2;
         double result = baseMedia * altura;
-        System.out.println("A área do trapézio é " + result);
+        return result;
+
     }
 }
 
